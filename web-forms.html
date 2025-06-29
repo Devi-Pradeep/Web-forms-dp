@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="web-forms.css">
+</head>
+
+<body>
+
+  <div class="form-container">
+    <h2>Registration Form</h2>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label>Gender:</label>
+      <div class="gender">
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+      </div>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="example@xxx.com" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="XXXXXXXXXX">
+
+  <label for="country">Country:</label>
+  <select id="country" name="country" required>
+    <option value="">--Select Country--</option>
+    <option value="India">India</option>
+    <option value="USA">USA</option>
+    <option value="UK">UK</option>
+    <option value="Other">Other</option>
+  </select>
+
+       <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="This will be the name that appears on your profile" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Include letters, numbers and special characters" required>
+
+<label for="confirm-password">Confirm Password:</label>
+  <input type="password" id="confirm-password" name="confirm-password" placeholder="Retype your password" required>
+
+  <label for="security-question">Security Question:</label>
+  <select id="security-question" name="security-question" required>
+    <option value="">--Select a question--</option>
+    <option value="pet">Who is your best friend?</option>
+    <option value="school">What is your school name?</option>
+    <option value="city">Which city were you born in?</option>
+  </select>
+
+  <label for="security-answer">Your Answer:</label>
+  <input type="text" id="security-answer" name="security-answer" placeholder="Type your answer" required>
+
+  <label for="about">About You:</label>
+  <textarea id="about" name="about" rows="3" placeholder="Write something about yourself..."></textarea>
+
+
+      <label class="correct">
+        <input type="checkbox" required> I confirm that all details provided are correct
+      </label>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>
